@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Currency Convertor</title>
+		<link rel="icon" href="favicons/fav-star-x16.png" type="image/x-icon" />
+		<link rel="stylesheet" href="css/convert.css" />
+	</head>
+	<body>
+		<div class="container">
+			<header>
+				<h1>Currency Converter</h1>
+			</header>
+			<main>
+				<section id="converter">
+					<h2>Convert Currency</h2>
+					<form id="convert-form">
+						<label for="from-currency">From:</label>
+						<input
+							type="text"
+							id="from-currency"
+							name="from_currency"
+							placeholder="USD"
+							required
+						/>
+
+						<label for="to-currency">To:</label>
+						<input
+							type="text"
+							id="to-currency"
+							name="to_currency"
+							placeholder="EUR"
+							required
+						/>
+
+						<label for="amount">Amount:</label>
+						<input
+							type="number"
+							id="amount"
+							name="amount"
+							placeholder="1.00"
+							step="1"
+							required
+						/>
+
+						<button type="submit">Convert</button>
+					</form>
+					<div id="conversion-result" class="result"></div>
+					<div id="conversion-date" class="result"></div>
+				</section>
+			</main>
+			<footer>
+				<p>&copy; Garry Currency Exchanger 2024</p>
+			</footer>
+		</div>
+		<script src="js/convert.js"></script>
+	</body>
+</html>
